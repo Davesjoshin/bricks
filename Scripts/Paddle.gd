@@ -31,6 +31,11 @@ func _physics_process(delta):
 
 func _input(event):
 	if event is InputEventKey and event.scancode == KEY_UP and event.pressed == false:
-		var ball = ball_scene.instance()
-		ball.set_position(get_position()-Vector2(0,16))
-		get_tree().get_root().add_child(ball)
+		if get_node("/root/World").lives > 0:
+			var ball = ball_scene.instance()
+			ball.set_position(get_position()-Vector2(0,16))
+			get_tree().get_root().add_child(ball)
+		else:
+			get_node("/root/World").game_over = true
+			print("game over")
+		

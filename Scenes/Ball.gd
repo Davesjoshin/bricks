@@ -38,4 +38,4 @@ func _physics_process(delta):
 	if get_position().y > get_viewport_rect().end.y:
 		queue_free()
 		print("ball is gone")
-		get_node("/root/World").score -= base_point
+		get_node("/root/World").lives -= 1
