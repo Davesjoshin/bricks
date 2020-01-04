@@ -28,7 +28,6 @@ func _physics_process(delta):
 	# set_position(Vector2(mouse_x, y))
 	set_position(motion)
 
-
 func _input(event):
 	if event is InputEventKey and event.scancode == KEY_UP and event.pressed == false:
 		if get_node("/root/World").lives > 0:
