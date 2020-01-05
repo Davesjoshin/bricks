@@ -23,6 +23,7 @@ margin_bottom = 331.0
 margin_right = 83.0
 margin_bottom = 14.0
 text = "Bricks!"
+align = 1
 
 [node name="StartGameButton" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_top = 18.0

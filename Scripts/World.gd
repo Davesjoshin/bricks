@@ -1,9 +1,9 @@
 extends Node2D
 
 var score = 0 setget set_score
+var score_level_ups = 1
 var lives = 3 setget set_life
 var game_over = false
-# var username
 var brick_count = 0
 
 func set_score(value):
